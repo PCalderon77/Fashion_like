@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Like- Inicio de sesión</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="main">
+    <div class="container">
+      <div class="container-left">
+        <img src="imagenes/logo-1.svg" alt="">
+  
+      </div>
+      <div class="container-right">
+        <img src="imagenes/vestido.svg" alt="">
+        <div class="container-title">
+          <h1>Únete a fashion like hoy mismo.</h1>
+        </div>
+        
+        <button id="googleBtn">Registrarse con Google</button>
+        <button id="facebookBtn">Registrarse con Facebook</button>
+        <div class="container-text1"><h6>O</h6>
+        </div>
+        <button id="modalBtn">Crear Cuenta</button>
+        <div class="container-text2">
+          <p>Al registrarte, aceptas los Términos de servicio y la Política de privacidad, incluida la política de Uso de Cookies.</p>
+        </div>
+        <div class="iniciar-sesion">
+          <h3>¿Ya tienes una cuenta?</h3>
+        </div>
+        <button id="modalBtn-1">Iniciar Sesion</button>
+      
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="imagenes/vestido.svg" alt="">
+            <h2>Registro</h2>
+            <form id="emailForm">
+              <div class="formulario__grupo" >
+                <div class="formulario__grupo-input">
+                  <input type="text" class="formulario__input" id="nombre" placeholder="Nombre">
+                </div>
+              </div>
+              <div class="formulario__grupo" >
+                <div class="formulario__grupo-input">
+                  <input type="date" class="formulario__input" id="fechaNacimiento" name="fechaNacimiento">
+                </div>
+              </div>
+               <!-- Grupo: Correo Electronico -->
+              <div class="formulario__grupo" id="grupo__correo">
+               <div class="formulario__grupo-input">
+                   <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                   <i class="formulario__validacion-estado fas fa-times-circle"></i>
+               </div>
+               <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+              </div>
+  
+              <!-- Grupo: Contraseña -->
+              <div class="formulario__grupo" id="grupo__password">
+                  <div class="formulario__grupo-input">
+                      <input type="password" class="formulario__input" name="password" id="password" placeholder="ingrese su contraseña">
+                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                  </div>
+                  <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+              </div>
+  
+              <!-- Grupo: Contraseña 2 -->
+              <div class="formulario__grupo" id="grupo__password2">
+                  <div class="formulario__grupo-input">
+                      <input type="password" class="formulario__input" name="password2" id="password2" placeholder="Repetir contraseña">
+                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                  </div>
+                  <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+              </div>
+  
+              <!-- Grupo: Terminos y Condiciones -->
+              <div class="formulario__grupo" id="grupo__terminos">
+                  <label class="formulario__label">
+                      <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                      <p>Acepto los Terminos y Condiciones</p>
+                  </label>
+              </div>
+  
+              <div class="formulario__mensaje" id="formulario__mensaje">
+                  <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+              </div>
+              <div class="formulario__grupo formulario__grupo-btn-enviar">
+                  <button type="submit" class="formulario__btn">Crear Cuenta</button>
+                  <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Cuenta creada exitosamente!</p>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div id="modal-1" class="modal-1">
+          <div class="modal-content-1">
+            <span class="close-1">&times;</span>
+            <img src="imagenes/vestido.svg" alt="">
+            <h2>Iniciar Sesion en Fashion Like</h2>
+            <form id="inicioForm">
+              <!-- Grupo: Correo Electronico -->
+              <div class="formulario__grupo" id="grupo__correo1">
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo1" id="correo1" placeholder="correo@correo.com">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+              </div>
+              <!-- Grupo: Contraseña -->
+              <div class="formulario__grupo" id="grupo__password1">
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password1" id="password1" placeholder="ingrese su contraseña">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+            </div>
+
+            <div class="formulario__mensaje" id="formulario__mensaje1">
+                <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Contraseña o usuario incorrecto</p>
+            </div>
+              <button type="submit" >Iniciar sesion</button>
+              <button type="submit">¿Olvidaste tu contraseña?</button>
+              <h4>¿No tienes una cuenta?</h4><a href="#" id="openModal">Registrarse</a>
+            </form>
+          </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="footer">
+    <div class="footer-copyright">
+      <h5 class="brand">&copy;2023-Derechos reservados by Pablo Calderon</h5>
+    </div>
+    <div class="container-footer">
+      <a href="https://www.linkedin.com/in/pablo-calderon-66aaa41a9/"><img src="imagenes/ln.svg" alt=""></a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
